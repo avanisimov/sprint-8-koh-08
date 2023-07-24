@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Sprint8koh08</string>
+    <string name="item_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra pharetra erat in lacinia. Sed nisi neque, posuere vitae velit sit amet, pharetra aliquam nibh. Praesent mattis ultricies massa id accumsan. Vivamus pretium nulla vitae dignissim aliquet. Nullam non sem a nunc porttitor pellentesque in at mauris. Nunc magna risus, dignissim vitae sollicitudin ut, ultrices nec elit. Aliquam suscipit justo id accumsan pellentesque.</string>
+    <string name="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra pharetra erat in lacinia. Sed nisi neque, posuere vitae velit sit amet, pharetra aliquam nibh. Praesent mattis ultricies massa id accumsan. Vivamus pretium nulla vitae dignissim aliquet. Nullam non sem a nunc porttitor pellentesque in at mauris. Nunc magna risus, dignissim vitae sollicitudin ut, ultrices nec elit. Aliquam suscipit justo id accumsan pellentesque.</string>
+    <string name="subtitle">Subtitle</string>
 </resources>
