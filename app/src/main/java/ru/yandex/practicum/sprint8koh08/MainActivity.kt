@@ -18,6 +18,9 @@ class MainActivity : AppCompatActivity() {
     lateinit var counterText: TextView
 
     var counter: Int = 0
+
+    var lastOnStopTimestamp = 0L
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -30,7 +33,12 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        Log.d(TAG, "$this onStart")
+        Log.d(TAG, "$this onStart time=${System.currentTimeMillis()}")
+        val onStartTimestamp = System.currentTimeMillis()
+        val delta = onStartTimestamp - lastOnStopTimestamp
+        if (delta > 3000){
+            Log.d(TAG, "Time for PIN code")
+        }
     }
 
     override fun onResume() {
@@ -54,8 +62,10 @@ class MainActivity : AppCompatActivity() {
 
     override fun onStop() {
         super.onStop()
-        Log.d(TAG, "$this onStop")
+        Log.d(TAG, "$this onStop time=${System.currentTimeMillis()}")
         timer.cancel()
+        lastOnStopTimestamp = System.currentTimeMillis()
+
     }
 
     override fun onDestroy() {
